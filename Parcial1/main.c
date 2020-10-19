@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
-#define LEN_NOTEBOOK 3
+#define LEN_NOTEBOOK 4
 
 typedef struct
 {
@@ -52,6 +52,7 @@ int main()
     eNotebook notebooks[LEN_NOTEBOOK] =
     {
         {1000, "I5", "INTEL", 25000.75},
+        {1000, "I9", "INTEL", 40000.75},
         {1001, "I9", "IBM", 80000.89},
         {1002, "I7", "Qualcomm", 100000}
     };
@@ -123,9 +124,9 @@ int printNotebooks(eNotebook* list, int len)
 {
     if(list != NULL && len > 0 && len <= 10)
     {
-        printf("*********************************************************************************************************\n");
+        printf("******************************************************************\n");
         printf("  ID            PROCESADOR           MARCA              PRECIO\n");
-        printf("*********************************************************************************************************\n");
+        printf("*******************************************************************\n");
         for(int i = 0; i < len; i++)
         {
                 showNotebook(list[i]);
