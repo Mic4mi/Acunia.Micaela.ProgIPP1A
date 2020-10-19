@@ -126,7 +126,7 @@ int printNotebooks(eNotebook* list, int len)
     {
         printf("******************************************************************\n");
         printf("  ID            PROCESADOR           MARCA              PRECIO\n");
-        printf("*******************************************************************\n");
+        printf("******************************************************************\n");
         for(int i = 0; i < len; i++)
         {
                 showNotebook(list[i]);
